@@ -1,0 +1,6 @@
+This  project  is basic representation ,how load is transefered and balanced b/w the servers.
+Firstly a Client makes a request for the server.
+Then this reqest is transfered to the loadbalancer.py which checks for servers availability .
+LoadBalancer.py has a list of servers from which it checks for the online server or the servers which can accomodate reuests.
+After finding the available server it transefers the request  to the available server and then the server responds to the client that the connection is established.
+This loadbalancer checks for the avaialable server after a short timeout so as to reduce load on a single server
